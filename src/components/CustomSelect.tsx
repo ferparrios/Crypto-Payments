@@ -65,8 +65,8 @@ export const CustomSelect = ({ setFormData }: Props) => {
               <input type="text" placeholder="Buscar" />
             </div>
             {coins.map((c, index) => (
-              <div className="modal-items-container">
-                <div className="modal-items-coin-desc" key={index}>
+              <div className="modal-items-container" key={index}>
+                <div className="modal-items-coin-desc" >
                   <img src={c.image} alt={c.name} className="item-image" />
                   <div className="modal-items-coin-name-desc">
                     <p>{c.name}</p>
