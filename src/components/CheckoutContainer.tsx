@@ -117,7 +117,7 @@ const CheckoutContainer = () => {
             <div className="checkout-resume-inner-container">
               <div className="checkout-resume-item-container-div">
                 <div className="checkout-resume-item-container">
-                  <p>Importe:</p>
+                  <p className="inner-dark-text">Importe:</p>
                   <p>
                     <span className="inner-dark-text">
                       {payment.fiat_amount} {payment.fiat}
@@ -128,25 +128,25 @@ const CheckoutContainer = () => {
               </div>
               <div className="checkout-resume-item-container-div">
                 <div className="checkout-resume-item-container">
-                  <p>Moneda seleccionada:</p>
-                  <p>{payment.currency_id}</p>
+                  <p className="inner-dark-text">Moneda seleccionada:</p>
+                  <p className="inner-dark-text">{payment.currency_id}</p>
                 </div>
                 <hr />
               </div>
               <div className="checkout-resume-item-container-div">
                 <div className="checkout-resume-item-container">
-                  <p>Comercio:</p>
+                  <p className="inner-dark-text">Comercio:</p>
                   <p>{payment.merchant_device}</p>
                 </div>
                 <div className="checkout-resume-item-container">
-                  <p>Fecha:</p>
+                  <p className="inner-dark-text">Fecha:</p>
                   <p>{formattedDate(payment.created_at)}</p>
                 </div>
                 <hr />
               </div>
               <div className="checkout-resume-item-container-div">
                 <div className="checkout-resume-item-container">
-                  <p>Concepto:</p>
+                  <p className="inner-dark-text">Concepto:</p>
                   <p>{payment.notes}</p>
                 </div>
               </div>

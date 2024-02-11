@@ -58,7 +58,7 @@ const FormContainer = () => {
         <div className="main-input-container">
           <label htmlFor="">Importe a pagar</label>
           <input
-            type="text"
+            type="number"
             name="expected_output_amount"
             placeholder="Añade un importe a pagar"
             value={formData.expected_output_amount}
